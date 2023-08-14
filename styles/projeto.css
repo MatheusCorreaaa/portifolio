@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #000000; 
+    --cor-secundaria: white;
+    --cor-terciaria: #205295;
+    --cor-hover: #2C74B3;
+    --cor-gray: gray; 
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+.apresentacao {
+    margin: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 82px;
+}
+
+.destaque {
+    color: var(--cor-terciaria);
+}
+
+h1{
+    font-weight: bold;
+}
+
+a{
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+.apresentacao_conteudo{
+   width: 50%; 
+   display: flex;
+   flex-direction: column;
+   gap: 40px;
+
+}
+.apresentacao_titulo{
+    font-size: 2.25rem; /* 16px e igual a 1 rem valor do pixel divido por 16*/
+    font-family: var(--fonte-principal)
+    
+}
+.apresentacao_texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria)
+   
+}
+.links{
+    display: flex;  /* coloca os quadrados lado a lado */
+    flex-direction: column; /* coloca em coluna*/
+    justify-content: space-between;
+    align-items: center; /*centraliza os items*/
+    gap: 32px; /* adiciona espaços iguais entre cada quadrado */
+}
+.apresentacao_links_subtitulo {
+   font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.apresentacao_links{
+    /* background-color: #22D4FD; */ 
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border:2px solid transparent; /*expressura da borda,forma e cor da borda*/ /*var cor terciaria*/
+    width: 50%; /* largura */
+    text-align: center;
+    border-radius: 8px; /* mudar a forma e expressão da borda*/
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:var(--cor-secundaria);
+    font-family:var(--fonte-secundaria) /* fonte da letra*/
+}  
+.apresentacao_links:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-gray);
+    padding-left: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 4%;
+}
+.apresentacao_imagem{
+    width: 50%;
+}
+.rodape{
+    color: var(--cor-primaria);     
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    padding: 24px;
+    font-family:var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.cabecalho{
+    padding: 2% 0% 0% 15%;   
+}
+
+.cabecalho_menu{
+    display: flex;
+    gap: 80px;
+}
+
+
+
+.cabecalho_link{
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    
+
+}
+
+
+.apresentacao__conteudo__texto a{ 
+    text-decoration: none;
+    color: var(--cor-terciaria);
+
+}
+.apresentacao__conteudo__texto{
+    font-family:var(--fonte-secundaria);
+    font-size: 1.25rem;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 1px 0 0 3px;
+    
+}
+
+.espaco_titulo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+@media (max-width: 1200px ){
+    .cabecalho {
+        padding: 10%;
+
+    } 
+    .cabecalho_menu{
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%
+    } 
+    .apresentacao_conteudo{
+        width: auto; 
+    }
+}
